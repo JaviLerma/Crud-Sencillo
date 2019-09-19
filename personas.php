@@ -1,7 +1,7 @@
 <?php
 require_once "conectar.php";
 
-class personas extends Conectar{
+class personas {
 
     private $conexion;
 

@@ -54,11 +54,7 @@ require_once "personas.php";
         <?php
         }
         ?>
-
-
     </table>
-
-
 </body>
 
 <html>

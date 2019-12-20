@@ -60,5 +60,3 @@ class personas {
         $this->conexion->autocommit(true);
     }
 }
-
-?>

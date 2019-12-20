@@ -45,5 +45,3 @@ if(($_GET['button']) == "eliminar"){
         echo "ERROR AL ELINIAR";
     }
 }
-
-?>

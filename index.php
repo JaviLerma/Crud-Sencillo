@@ -55,6 +55,9 @@ require_once "personas.php";
         }
         ?>
     </table>
+    <a href="imprimir.php" target=_blank>
+        <button type="button">Imprimir</button>
+    </a>
 </body>
 
 <html>

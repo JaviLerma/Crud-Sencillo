@@ -19,7 +19,7 @@ class personas {
     }
     
     public function getById($id){
-        $sql = "SELECT nombre,apellido FROM personas WHERE id=$id";
+        $sql = "SELECT nombre,apellido,edad FROM personas WHERE id=$id";
         $result = $this->conexion->query($sql);
         return mysqli_fetch_row($result);
 
@@ -27,12 +27,12 @@ class personas {
 
 
     public function insertar($datos){
-        $sql = "INSERT INTO personas VALUES (null, '$datos[0]', '$datos[1]')";
+        $sql = "INSERT INTO personas (id, nombre, apellido, edad) VALUES (NULL, '$datos[0]', '$datos[1]', $datos[2])";
         return $this->transaccion($sql);
     }
 
     public function actualizar($datos){
-        $sql="UPDATE personas SET nombre='$datos[0]',apellido='$datos[1]' WHERE id=$datos[2]";
+        $sql="UPDATE personas SET nombre='$datos[0]',apellido='$datos[1]',edad='$datos[2]' WHERE id=$datos[3]";
         return $this->transaccion($sql);
     }
 

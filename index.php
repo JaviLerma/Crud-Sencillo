@@ -20,6 +20,8 @@ require_once "personas.php";
         <input type="text" name="nombre">
         <label>Apellido: </label>
         <input type="text" name="apellido">
+        <label>Edad: </label>
+        <input type="number" name="edad">
         <button type="submit" name="insertar">Guardar</button>
     </form>
 
@@ -29,6 +31,7 @@ require_once "personas.php";
             <th>ID</th>
             <th>Nombre</th>
             <th>Apellido</th>
+            <th>Edad</th>
             <th>#</th>
         </tr>
 
@@ -42,6 +45,7 @@ require_once "personas.php";
                 <th><?php echo $persona['id']; ?></th>
                 <th><?php echo $persona['nombre']; ?></th>
                 <th><?php echo $persona['apellido']; ?></th>
+                <th><?php echo $persona['edad']; ?></th>
                 <th>
                     <a href="editar.php?id=<?php echo $persona['id']; ?>">
                         <button type="button">Editar</button>

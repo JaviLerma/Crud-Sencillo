@@ -22,6 +22,8 @@ $datos = $persona->getById($id);
         <input type="text" name="nombre" value="<?php echo $datos[0]; ?>">
         <label>Apellido: </label>
         <input type="text" name="apellido" value="<?php echo $datos[1]; ?>">
+        <label>Edad: </label>
+        <input type="number" name="edad" value="<?php echo $datos[2]; ?>">
         <button type="submit" name="actualizar">Actualizar</button>
     </form>
 </body>

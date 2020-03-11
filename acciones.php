@@ -6,9 +6,11 @@ if(isset($_POST['insertar'])){
 
     $nombre = $_POST['nombre'];
     $apellido = $_POST['apellido'];
+    $edad = $_POST['edad'];
 
-    $datos = array($nombre, $apellido);
+    $datos = array($nombre, $apellido, $edad);
     $persona = new Personas();
+
     if ($persona->insertar($datos)){
         echo "Datos insertados correcamente";
         header ("Location: index.php");
@@ -22,8 +24,9 @@ if(isset($_POST['actualizar'])){
     $id = $_POST['id'];
     $nombre = $_POST['nombre'];
     $apellido = $_POST['apellido'];
+    $edad = $_POST['edad'];
 
-    $datos = array($nombre, $apellido, $id);
+    $datos = array($nombre, $apellido, $edad, $id);
     $persona = new Personas();
     if ($persona->actualizar($datos)){
         echo "Datos insertados correcamente";
